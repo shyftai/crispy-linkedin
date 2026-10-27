@@ -1,0 +1,15 @@
+{
+  "name": "crispy-linkedin",
+  "description": "Connect your agent to LinkedIn with Crispy. Includes the crispy-linkedin onboarding skill, LinkedIn job skills, and the hosted Crispy MCP server.",
+  "owner": {
+    "name": "Crispy",
+    "url": "https://crispy.sh"
+  },
+  "plugins": [
+    {
+      "name": "crispy-linkedin",
+      "source": "./",
+      "description": "Connect your agent to LinkedIn with Crispy. Includes the crispy-linkedin onboarding skill, LinkedIn job skills, and the hosted Crispy MCP server."
+    }
+  ]
+}
