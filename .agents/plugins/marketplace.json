@@ -1,0 +1,20 @@
+{
+  "name": "crispy-linkedin",
+  "interface": {
+    "displayName": "Crispy for LinkedIn"
+  },
+  "plugins": [
+    {
+      "name": "crispy-linkedin",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

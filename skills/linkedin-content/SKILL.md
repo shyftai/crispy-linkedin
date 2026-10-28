@@ -12,7 +12,7 @@ Use this skill for personal branding, post drafting, publishing, scheduling, com
 This skill assumes an active Crispy connection.
 - Verify the session using `get_briefing` with `include: ["session"]` or `get_account` with `verify_session: true`.
 - If the session is missing or unhealthy, stop and route back to `crispy-linkedin`.
-- Use OAuth first. Otherwise read `CRISPY_API_KEY` from the environment. Never ask for an API key in chat and never print one. If no user is present and `CRISPY_API_KEY` is unset, stop and report.
+- Use OAuth on the remote MCP at https://crispy.sh/api/mcp first. Use `CRISPY_API_KEY` only when the user has set it in their own environment. Never ask for an API key in chat, never print one, and never write a literal key into a config file. If no user is present and `CRISPY_API_KEY` is unset, stop and report.
 - Read live daily limits from `get_account` before posting, commenting, or reacting. Never hardcode tool counts, prices, or daily limits.
 
 ## 2. Recipes and Playbooks First
