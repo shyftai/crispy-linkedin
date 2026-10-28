@@ -10,6 +10,7 @@
   "repository": "https://github.com/shyftai/crispy-linkedin",
   "privacyPolicyUrl": "https://crispy.sh/privacy",
   "license": "MIT",
+  "icon": "./assets/icon.png",
   "keywords": [
     "linkedin",
     "crispy",

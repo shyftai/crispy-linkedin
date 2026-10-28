@@ -1,0 +1,47 @@
+{
+  "name": "crispy-linkedin",
+  "version": "1.0.0",
+  "description": "Connect your agent to LinkedIn with Crispy. Includes the crispy-linkedin onboarding skill, LinkedIn job skills, and the hosted Crispy MCP server.",
+  "author": {
+    "name": "Crispy",
+    "email": "support@crispy.sh",
+    "url": "https://crispy.sh"
+  },
+  "homepage": "https://crispy.sh",
+  "repository": "https://github.com/shyftai/crispy-linkedin",
+  "license": "MIT",
+  "keywords": [
+    "linkedin",
+    "crispy",
+    "prospecting",
+    "outreach",
+    "content",
+    "analytics",
+    "sales-navigator",
+    "playbooks"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Crispy for LinkedIn",
+    "shortDescription": "Connect agents to LinkedIn",
+    "longDescription": "Search LinkedIn people and companies, manage your LinkedIn inbox and outreach campaigns, publish posts in your voice, and track analytics with Crispy.",
+    "developerName": "Crispy",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://crispy.sh",
+    "supportURL": "https://crispy.sh/contact",
+    "privacyPolicyURL": "https://crispy.sh/privacy",
+    "termsOfServiceURL": "https://crispy.sh/terms",
+    "defaultPrompt": [
+      "Check my LinkedIn inbox for conversations that need a reply.",
+      "Find VP of Sales profiles at Series B SaaS companies on LinkedIn.",
+      "Summarize my LinkedIn post performance from the past 30 days."
+    ],
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/icon.png"
+  }
+}

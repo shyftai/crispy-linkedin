@@ -13,7 +13,7 @@ This skill assumes an active Crispy connection and a LinkedIn account with a Sal
 - Verify the session and check whether Sales Navigator is detected by calling `get_briefing` with `include: ["session"]` or `get_account` with `verify_session: true`.
 - If the session is missing or unhealthy, stop and route back to `crispy-linkedin`.
 - If `get_account` shows that the connected LinkedIn account does not have a Sales Navigator seat, report that clearly and offer to run Classic searches through `linkedin-prospecting` instead.
-- Use OAuth first. Otherwise read `CRISPY_API_KEY` from the environment. Never ask for an API key in chat and never print one. If no user is present and `CRISPY_API_KEY` is unset, stop and report.
+- Use OAuth on the remote MCP at https://crispy.sh/api/mcp first. Use `CRISPY_API_KEY` only when the user has set it in their own environment. Never ask for an API key in chat, never print one, and never write a literal key into a config file. If no user is present and `CRISPY_API_KEY` is unset, stop and report.
 - Read live daily limits from `get_account` before running searches or profile lookups. Never hardcode tool counts, prices, or daily numbers.
 
 ## 2. Recipes and Playbooks First
